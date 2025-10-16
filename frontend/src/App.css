@@ -1,0 +1,43 @@
+body { margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f7f9fb; color:#333; }
+.header { background:#0ea5a3; color:white; padding:12px 0; }
+.header .container { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto; padding:0 16px; }
+.logo { font-weight:700; font-size:20px; display:flex; align-items:center; gap:8px; }
+.search { flex:1; margin:0 20px; }
+.search input { width:100%; padding:10px; border-radius:4px; border:1px solid #ddd; }
+.nav-actions { display:flex; gap:12px; align-items:center; }
+
+.container { max-width:1100px; margin:30px auto; padding:0 16px; }
+
+.hero { background: linear-gradient(90deg,#e6fffb,#ffffff); display:flex; gap:20px; align-items:center; padding:36px; border-radius:8px; }
+.hero img { width:420px; max-width:40%; border-radius:6px; }
+.hero .hero-text h1 { font-size:28px; margin:0 0 10px; }
+.hero .hero-text p { margin:0 0 20px; color:#555; }
+
+.featured-row { display:flex; gap:12px; margin-top:18px; }
+.featured-card { flex:1; background:white; padding:14px; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.06); display:flex; gap:12px; align-items:center; }
+.featured-card img{ width:80px; height:80px; object-fit:cover; border-radius:6px; }
+
+.deal { background:#fff; padding:16px; margin-top:18px; border-radius:8px; display:flex; gap:20px; align-items:center; justify-content:space-between; box-shadow:0 1px 6px rgba(0,0,0,0.04); }
+
+.products-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:16px; margin-top:22px; }
+@media (max-width:1000px){ .products-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width:600px){ .products-grid { grid-template-columns: 1fr; } }
+
+.card { background:white; padding:12px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.04); text-align:center; }
+.card img{ width:100%; height:160px; object-fit:cover; border-radius:6px; }
+.card h3{ font-size:16px; margin:8px 0; }
+.card p{ color:#666; font-size:13px; min-height:38px; }
+.card .price{ font-weight:700; margin:8px 0; }
+.card button{ background:#0ea5a3; color:white; border:none; padding:8px 10px; border-radius:6px; cursor:pointer; }
+
+.categories { display:flex; gap:12px; margin-top:22px; padding:12px 8px; background:#eef6f6; border-radius:8px; overflow-x:auto; }
+.category-item { background:white; padding:8px 12px; border-radius:6px; min-width:120px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,0.03); }
+
+.footer { background:#0b7285; color:white; padding:20px 0; margin-top:30px; }
+.footer .container { display:flex; justify-content:space-between; align-items:center; }
+
+.admin { max-width:1100px; margin:30px auto; padding:12px; background:#fff; border-radius:8px; }
+.admin h2 { margin-top:0; }
+.admin .list { margin-top:12px; }
+.admin .list li { padding:6px 0; display:flex; justify-content:space-between; align-items:center; border-bottom:1px dashed #eee; }
+.admin input, .admin textarea { width:100%; padding:8px; margin:6px 0; border-radius:6px; border:1px solid #ddd; }
