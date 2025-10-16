@@ -6,7 +6,11 @@ function ProductCard({product}){
     // show mock confirmation and call /purchase to demonstrate backend call
     API.post("/purchase", { productId: product.id, quantity:1, buyerName: "Student Demo" })
       .then(res => alert(res.data.message))
-      .catch(err => alert("Error confirming order (mock)"));
+      .catch(err => {
+        // log the error for debugging and show a user-friendly message
+  console.error("Purchase API error:", err);
+        alert("Error confirming order (mock)");
+      });
   };
 
   return (
